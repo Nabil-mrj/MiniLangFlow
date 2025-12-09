@@ -7,7 +7,7 @@ This project is intentionally minimal but architecturally aligned with modern Ge
 
 ---
 
-## Technical Objectives
+## Technical objectives
 
 - Provide a local, cost-free alternative to workflow tools such as LangFlow.
 - Build a modular API for text summarization, QA, and multi-step workflows.
@@ -19,12 +19,12 @@ This project is intentionally minimal but architecturally aligned with modern Ge
 
 ## Features
 
-### LLM Orchestration (Local Execution)
+### LLM Orchestration (local execution)
 - Uses **Ollama** to run models such as Llama 3 or Mistral entirely offline.
 - No external API calls or cloud dependencies.
 - Deterministic, reproducible pipeline.
 
-### Modular Endpoints
+### Modular endpoints
 Implemented in the `src/` directory through Express.js:
 
 - `/summarize`: text summarization  
@@ -43,15 +43,15 @@ The `rag/` directory contains the foundational components of a RAG system:
 
 The backend dynamically calls these scripts to enrich responses with domain-relevant context.
 
-### Logging & Observability
+### Logging & observability
 - Each request is logged in the `logs/` directory.
 - Logs include timestamp, endpoint name, payload metadata, and output snippet.
 
 ---
 
-## Project Architecture
+## Project architecture
 
-### Node.js Backend (Express)
+### Node.js backend (Express)
 Orchestrates all workflows and provides a clean API surface.
 
 Responsibilities:
@@ -66,7 +66,7 @@ Main files:
 - `ollamaClient.js` — interface to Ollama  
 - `logger.js` — structured logging  
 
-### Python RAG Engine
+### Python RAG engine
 Used for vector search and chunk retrieval.
 
 Components:
@@ -79,7 +79,7 @@ This hybrid architecture reflects how modern AI systems often combine Python ML 
 
 ---
 
-## Repository Structure
+## Repository structure
 ```text
 .
 ├── README.md
@@ -99,5 +99,6 @@ This hybrid architecture reflects how modern AI systems often combine Python ML 
 ├── package.json                     # Node.js dependencies and scripts
 └── package-lock.json               
 ```
+
 
 
