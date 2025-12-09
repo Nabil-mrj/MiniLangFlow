@@ -81,20 +81,12 @@ This hybrid architecture reflects how modern AI systems often combine Python ML 
 
 ## Repository Contents
 
-- `src/`  
-  Express.js server, LLM client, logging utilities
+- `src/`: Express.js server, LLM client, logging utilities
 
-- `rag/`  
-  Python scripts for FAISS index construction and retrieval
+- `rag/`: Python scripts for FAISS index construction and retrieval
 
-- `data/`  
-  Text documents used as the knowledge base for RAG
+- `data/`: Text documents used as the knowledge base for RAG
 
-- `logs/` (ignored)  
-  Local request logs
+- `logs/`: Local request logs
 
-- `package.json` / `package-lock.json`  
-  Node.js dependencies
-
-- `.gitignore`  
-  Excludes `.env`, virtual environments, logs, FAISS index, and node_modules
+- `package.json` / `package-lock.json`: Node.js dependencies
