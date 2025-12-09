@@ -1,0 +1,16 @@
+MiniLangFlow est une application d’assistance IA locale développée en Node.js et LangChain.js.
+Elle s’inspire de plateformes comme LangFlow et LibreChat et propose un moteur de workflows IA
+modulaire : génération de texte, résumé, question-réponse, etc.
+
+L’architecture repose sur un serveur Express.js exposant plusieurs endpoints (/summarize, /qa, /workflow).
+Ces endpoints sont connectés à un modèle de langage open-source exécuté localement via Ollama
+(par exemple Llama 3 ou Mistral), ce qui garantit un fonctionnement gratuit et souverain.
+
+Le projet intègre un composant RAG (Retrieval-Augmented Generation) qui permet d’enrichir les réponses
+avec du contenu pertinent issu de documents textuels indexés localement avec FAISS et des embeddings
+générés par Hugging Face. Chaque requête est journalisée dans un fichier de logs afin de suivre les
+performances et le comportement du modèle.
+
+Ce projet démontre la capacité à concevoir une architecture logicielle complète combinant Node.js,
+LLMs open-source, LangChain et des outils de MLOps légers, tout en respectant des principes
+d’autonomie, de sécurité et de reproductibilité.

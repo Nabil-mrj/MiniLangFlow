@@ -1,0 +1,22 @@
+# ENV
+.env
+
+# Node modules
+node_modules/
+
+# Python venv
+minilangflow-venv/
+.venv/
+*.pyc
+__pycache__/
+
+# Logs
+logs/
+*.log
+
+# FAISS index et métadonnées
+rag/index.faiss
+rag/chunks.json
+
+# Fichiers système
+.DS_Store
