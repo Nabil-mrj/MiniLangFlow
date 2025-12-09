@@ -1,4 +1,4 @@
-# MiniLangFlow — Local AI Workflow Engine with RAG and LLM Orchestration
+# MiniLangFlow — Local AI workflow engine with RAG and LLM orchestration
 
 MiniLangFlow is a lightweight, fully local AI workflow engine inspired by platforms such as LangFlow and LibreChat.  
 It demonstrates how to build a complete, modular system that orchestrates text generation, summarization, question answering, and Retrieval-Augmented Generation (RAG) using open-source LLMs running locally via Ollama.
@@ -90,3 +90,4 @@ This hybrid architecture reflects how modern AI systems often combine Python ML 
 - `logs/`: Local request logs
 
 - `package.json` / `package-lock.json`: Node.js dependencies
+
