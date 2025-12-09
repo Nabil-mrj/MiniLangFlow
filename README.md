@@ -79,15 +79,25 @@ This hybrid architecture reflects how modern AI systems often combine Python ML 
 
 ---
 
-## Repository Contents
+## Repository Structure
+```text
+.
+├── README.md
+│
+├── src
+│   ├── server.js                   # Express.js API (summarization, QA, RAG, workflow)
+│   ├── ollamaClient.js             # Local LLM interface using Ollama
+│   └── logger.js                   # Structured request logging
+│
+├── rag
+│   ├── build_index.py              # Document ingestion, chunking, embedding generation, FAISS index creation
+│   └── query_index.py              # Top-k retrieval and context extraction for QA-RAG
+│
+├── data                             # Local text corpus used for RAG
+│   └── *.txt                       # Source documents
+│
+├── package.json                     # Node.js dependencies and scripts
+└── package-lock.json               
+```
 
-- `src/`: Express.js server, LLM client, logging utilities
-
-- `rag/`: Python scripts for FAISS index construction and retrieval
-
-- `data/`: Text documents used as the knowledge base for RAG
-
-- `logs/`: Local request logs
-
-- `package.json` / `package-lock.json`: Node.js dependencies
 
